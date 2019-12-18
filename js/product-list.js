@@ -3,7 +3,7 @@ class ProductList {
     this.cart = cart;
     fetch(productsUrl)
       .then(result => result.json())
-      .then(products => {
+      .then(products. sort ( (a, b) => b price - a price );
         this.products = products;
         this.renderProducts(renderContainer, products);
         this.addEventListeners();
